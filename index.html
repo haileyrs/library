@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Noto+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header-bar">
+    <h1>Library</h1>
+    <button class="add-btn">+ New Book</button>
+  </div>
+  <div class="main-content">
+    <div class="book-grid">
+      <div class="book-card">
+        <h3>Title</h3>
+        <p>This is a fake description. I wanted to write some words out to fill up space and make this more reflective of what the actual component will look like.</p>
+        <div class="card-bottom">
+          <div>
+            <input type="checkbox" id="read" name="read"/>
+            <label for="read">Read</label>
+          </div>
+          <button>Delete</button>
+        </div>
+      </div>
+      <div class="book-card">
+        <h3>Title</h3>
+        <p>Description</p>
+      </div>
+      <div class="book-card">
+        <h3>Title</h3>
+        <p>Description</p>
+      </div>
+      <div class="book-card">
+        <h3>Title</h3>
+        <p>Description</p>
+      </div>
+      <div class="book-card">
+        <h3>Title</h3>
+        <p>Description</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      haileyrs
+    </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
