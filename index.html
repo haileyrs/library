@@ -26,23 +26,26 @@
           <h3>Add Book</h3>
           <span class="close">&times;</span>
         </div>
-        <div class="modal-form">
-          <label for="title">Title</label>
-          <input type="text" name="title" id="title" />
-          <label for="author">Author</label>
-          <input type="text" name="author" id="author" />
-          <label for="description">Description</label>
-          <textarea name="description" id="description"></textarea>
-          <div>
-            <label for="pages">Pages</label>
-            <input type="number" name="pages" id="pages" />
-            <input type="checkbox" id="read" name="read" />
-            <label for="read">Read</label>
+        <form>
+          <div class="modal-form">
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" />
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" />
+            <label for="description">Description</label>
+            <textarea name="description" id="description"></textarea>
+            <div>
+              <label for="pages">Pages</label>
+              <input type="number" name="pages" id="pages" />
+              <input type="checkbox" id="read" name="read" />
+              <label for="read">Read</label>
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button class="save" id="save">Save</button>
-        </div>
+          <div class="modal-footer">
+            <button type="submit" class="save" id="save">Save</button>
+          </div>
+        </form>
+        
       </div>
     </div>
     <div class="book-grid">
@@ -52,8 +55,8 @@
         <p>This is a fake description. I wanted to write some words out to fill up space and make this more reflective of what the actual component will look like.</p>
         <div class="card-bottom">
           <div>
-            <input type="checkbox" id="read" name="read" />
-            <label for="read">Read</label>
+            <input type="checkbox" id="cardRead" name="cardRead" />
+            <label for="cardRead">Read</label>
           </div>
           <button>Delete</button>
         </div>

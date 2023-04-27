@@ -74,17 +74,17 @@ label {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 40%;
-  top: 20%;
-  width: 350px;
-  height: 430px;
-  overflow-y: auto;
-  overflow-x:hidden;
-  background-color: white;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.438);
 }
 
 .modal-content {
-  height: 100%;
+  margin: 64px auto auto auto;
+  width: 350px;
+  height: fit-content;
   display: grid;
   grid-template-rows: 50px 1fr 50px;
 }
@@ -94,6 +94,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
 }
 
 .modal-form {
@@ -104,10 +105,11 @@ label {
 }
 
 .modal-footer {
-  padding: 0 16px;
+  padding: 8px 16px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: white;
 }
 
 .close {
