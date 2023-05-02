@@ -26,17 +26,17 @@
           <h3>Add Book</h3>
           <span class="close">&times;</span>
         </div>
-        <form>
+        <form id="addBookForm">
           <div class="modal-form">
             <label for="title">Title</label>
-            <input type="text" name="title" id="title" />
+            <input type="text" name="title" id="title" required />
             <label for="author">Author</label>
-            <input type="text" name="author" id="author" />
+            <input type="text" name="author" id="author" required />
             <label for="description">Description</label>
             <textarea name="description" id="description"></textarea>
             <div>
               <label for="pages">Pages</label>
-              <input type="number" name="pages" id="pages" />
+              <input type="number" name="pages" id="pages" required />
               <input type="checkbox" id="read" name="read" />
               <label for="read">Read</label>
             </div>
@@ -58,7 +58,7 @@
             <input type="checkbox" id="cardRead" name="cardRead" />
             <label for="cardRead">Read</label>
           </div>
-          <button>Delete</button>
+          <button class="remove-book">Delete</button>
         </div>
       </div>
       <div class="book-card">
